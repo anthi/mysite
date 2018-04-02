@@ -9,11 +9,9 @@
 */
 
 
-
 html {
   background: #FAFAFA; /* white */
 }
-
 .gold{
   color: #C48D3A;
 }
@@ -21,17 +19,14 @@ html {
 .emphasis { 
     font-family: 'Roboto Black';
     font-weight: bold;
+}
 
-}
-keyword{
-  color:#896228;
-}
 .container {
   position: relative;
   margin: 0 auto;
-  width: 94%;
-  max-width: 704px;
-  font-size:15.5px;
+  width: 100%;
+  max-width: 710px;
+  font-size: 15.1px;
   font-family: 'Roboto' !important;
 
 }
@@ -76,8 +71,8 @@ keyword{
 .round {
   border-radius: 50%;
   overflow: hidden;
-  width:  250px;
-  height: 250px;
+  width:  270px;
+  height: 270px;
 }
 .round img {
   display: block;
@@ -116,7 +111,7 @@ keyword{
   position: relative;
   padding-left: 20px;
   padding-right:20px;
-  padding-top:20px;
+  padding-top:60px;
   float: left;
 }
 #cvId{
@@ -232,8 +227,13 @@ keyword{
   }
 }
 
+.icon{
+  height:25px;
+  padding-top: 5px;
+  padding-right: 5px;
+}
 .discrete{
-  color:gray;
+  color:#bdbdbd;
 }
 .left {
     line-height:30px;
@@ -265,7 +265,7 @@ h2 {
 }
 
 table tr td {
-    font-size: 12.5px;
+    font-size: 12.1px;
     padding: 8px;
     line-height: 1.428571429;
     vertical-align: top;
@@ -281,9 +281,13 @@ table{
   margin-right:    0px;
 }
 
+.publicationsTable{
+  width:100%;
+}
+
 #currentResearchId{
   position: relative;
-  padding-top: 12px;
+  padding-top: 0px;
   padding-bottom: 18px;
 }
 
