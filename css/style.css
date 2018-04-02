@@ -1,0 +1,293 @@
+/* 
+  Color Pallete
+  -----------------
+  #FAFAFA /* white:       */        
+  #D1BC9C /* dark beize:  */
+  #e3d6c3 /* light beize  */
+  #C48D3A /* gold         */
+
+*/
+
+
+
+html {
+  background: #FAFAFA; /* white */
+}
+
+.gold{
+  color: #C48D3A;
+}
+
+.emphasis { 
+    font-family: 'Roboto Black';
+    font-weight: bold;
+
+}
+keyword{
+  color:#896228;
+}
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 94%;
+  max-width: 705px;
+  font-size:15.5px;
+  font-family: 'Roboto' !important;
+
+}
+
+/* Everything below the header */
+.content {
+  position: relative;
+  padding-top: 80px;
+}
+
+#header {
+  /* The z-index: specifies the stack order of an element.
+  An element with greater stack order is 
+  always in front of an element with a lower stack order. */
+  z-index: 2; 
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #C48D3A;
+  color: #FAFAFA;
+}
+
+#header h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 300px;
+  font-size: 17pt;
+  font-family: 'Bodoni MT', Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+  font-weight: bold;  
+}
+
+.belowTitle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 85px;
+  padding-left: 0px;
+}
+.round {
+  border-radius: 50%;
+  overflow: hidden;
+  width:  250px;
+  height: 250px;
+}
+.round img {
+  display: block;
+  Stretch 
+  height: 100%;
+  width: 100%; 
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+#nav {
+  position: absolute;
+  left:300px;
+  width:400px;
+  position: absolute;
+
+}
+
+#aboutId {
+  position: relative;
+  margin-left: 300px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+
+  font-weight: 500;
+  float: left;
+
+
+}
+
+#researchId{
+  position: relative;
+  padding-left: 20px;
+  padding-right:20px;
+  padding-top:20px;
+  float: left;
+}
+#cvId{
+  position: relative;
+  padding-left: 20px;
+  padding-right:20px;
+  float: left;
+  min-width:660px;
+}
+
+#contactId{
+  position: relative;
+  padding-left: 20px;
+  padding-right:20px;
+  padding-top:20px;
+  float: left;
+}
+#nav ul li {
+
+  float: left;
+}
+#nav ul li a {
+
+  display: block;
+  color: #FAFAFA;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+#nav a{
+  color: #FAFAFA;
+}
+#nav a.active { 
+    background-color: #CAB08F;
+    color: #C48D3A;
+    font-weight: bold;
+}
+
+#nav a.nonactive{
+  background: #C48D3A;
+  color: #f1eae1;
+
+}
+#nav a:hover { 
+    /*color: white;
+    background: #e3d6c3;*/
+    font-weight: bold;
+}
+
+
+@media (max-width: 720px) {
+  #header .container {
+    width: 100%;
+  }
+ 
+  #nav {
+    width: 100%;
+
+    top: 60px;
+  }
+  #nav:before {
+    content: '\2630';
+    display: block;
+    position: relative;
+    margin-top: -65px;
+    margin-left:10px;
+    line-height: 55px;
+    cursor: pointer;
+    color: white;
+  }
+  #nav ul {
+    width: 100%;
+    padding-left: 10px;
+
+    transition: 350ms;
+    -moz-transition: 350ms;
+    -webkit-transition: 350ms;
+    transform: perspective(600) rotate3d(0, 0, 0, 0);
+    -moz-transform: perspective(600) rotate3d(0, 0, 0, 0);
+    -webkit-transform: perspective(600) rotate3d(1, 0, 0, -90deg);
+    transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -webkit-transform-origin: 50% 0;
+
+
+  }
+
+  #aboutId {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 300px;
+    padding-left:   20px;
+    padding-right:  20px;
+    padding-top:    20px;
+    padding-bottom: 20px;
+    float: left;
+  }
+
+  #nav.open ul {
+    transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -webkit-transform: perspective(600) rotate3d(0, 0, 0, 0);
+  }
+  #nav ul li {
+    float: none;
+  }
+  #nav ul li a {
+    padding: 10px 3%;
+
+    line-height: 20px;
+    border-top: 1px solid #FAFAFA;
+    background-color: #D1BC9C;
+  }
+}
+
+.discrete{
+  color:gray;
+}
+.left {
+    line-height:30px;
+    float:left;
+}
+
+h2 {
+    color: #C48D3A;
+    font-size: 16pt;
+    font-family: 'Roboto','Bodoni MT', Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif !important;
+    font-weight: bold;  
+}
+
+#textId{
+  color: #333;
+    text-align: justify;
+
+
+}
+.weblinkClass{
+  color: #7B4B04;
+  color: #333;
+
+}
+å
+.giveEmphasis{
+  font-weight: 700;  
+
+}
+
+table tr td {
+    font-size: 12.5px;
+    padding: 8px;
+    line-height: 1.428571429;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Roboto',"Helvetica Neue" !important;
+  }
+
+table{
+  margin-top:     14px;
+  margin-bottom:  14px;
+  margin-left:     0px;
+  margin-right:    0px;
+}
+
+#currentResearchId{
+  position: relative;
+  padding-top: 12px;
+  padding-bottom: 18px;
+}
+
+#pastResearchId{
+  position: relative;
+  padding-bottom: 18px;
+}
